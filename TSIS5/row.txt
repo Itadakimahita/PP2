@@ -1,0 +1,16 @@
+ab
+abb
+abbb
+a_b
+aa_bb
+Aa
+Aaa
+abab
+acb
+a b
+a, b
+a.b
+snakeCase
+camelCase
+ThisIsCamelCase
+AnotherCamelCaseString
