@@ -23,7 +23,7 @@ clock = pygame.time.Clock()
 
 # Define constants
 snake_block = 10
-snake_speed = 5
+snake_speed = 15
 
 # Define fonts
 font_style = pygame.font.SysFont("bahnschrift", 25)
@@ -144,7 +144,10 @@ def gameLoop():
         if x1 == foodx and y1 == foody:
             foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
             foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
-            Length_of_snake += 1
+            if food_color == blue:
+                Length_of_snake += 2
+            else:
+                Length_of_snake += 1
             if Length_of_snake % 5 == 0:
                 level += 1
 
